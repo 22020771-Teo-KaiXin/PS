@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LightSpeedRail's Recommendation Page</title>
+  <!--Bootstrap CSS Link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+      border-right: 1px solid #bbb;
+    }
+
+    li:last-child {
+      border-right: none;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111;
+    }
+
+    ul {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .active {
+      background-color: #04AA6D;
+    }
+
+
+    body {
+      background-image: url(Train_Background.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      color: whitesmoke;
+      font-family: Arial;
+
+    }
+
+    /* background-image {
+      opacity: 70%;
+     } */
+
+    h1 {
+      color: white;
+    }
+
+    h2 {
+      color: white;
+      margin-left: 20px;
+    }
+
+    p {
+      font-size: 16px;
+
+    }
+
+    article {
+      height: 400px;
+      width: 50%;
+      border-width: 1px;
+      border-color: black;
+      border-style: dashed;
+    }
+
+    .img {
+
+      border-radius: 10%;
+      border-width: 5px;
+      border-color: none;
+      border-style: solid;
+      width: 50%;
+      float: left;
+    }
+
+    nav {
+      background-color: #cea3f7;
+    }
+
+    .textAgn {
+      /* float: right; */
+      margin-left: 280px;
+
+
+
+    }
+
+    footer {
+      background-color: #111;
+      color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>LightSpeedRail Recommends!</h1>
+  </header>
+  <section>
+    <nav>
+      </style>
+      </head>
+
+      <body>
+
+        </style>
+        </head>
+
+        <body>
+          <ul>
+            <li><a href=Login.html class="Logout">Logout</a></li>
+            <li><a class="active" href=Recommendation.html>Recommendation</a></li>
+            <li><a href=index.html>Home</a></li>
+            <li><a href=Train_Booking_PS.html>Book With Us</a></li>
+           
+          </ul>
+
+    </nav>
+    <div class="container"> </div>
+    <h2>Visit Korea!</h2>
+    <div class="col-sm-4">
+      <img class="img" src="Korea.jpg" width="150" height="180" />
+    </div>
+
+    <div class="col-sm-6">
+      <div class="textAgn">
+        <p>
+          Korea is a land of contrasts, where ancient tradition meets modern technology. From the bustling streets of
+          Seoul to the tranquil
+          temples of Gyeongju, there is something for everyone in Korea. <br> </p>
+
+        <p> Immerse yourself in the rich culture of Korea, from the traditional music and dance to the delicious food.
+          Explore the beautiful
+          natural scenery, from the snow-capped mountains of Seoraksan to the pristine beaches of Jeju Island. </p>
+
+      </div>
+    </div>
+
+    <div class="container">
+
+    </div>
+
+    <h2><br>Visit Japan!</h2>
+    <div class="col-sm-4">
+      <img class="img" src="Japan.jpg" width="150" height="180" />
+    </div>
+    <div class="col-sm-6">
+      <div class="textAgn">
+        <p>
+          Japan is a country of contrasts, where ancient tradition meets modern technology. From the bustling streets of
+          Tokyo to the
+          tranquil temples of Kyoto, there is something for everyone in Japan. <br>
+        </p>
+        <p>
+          Immerse yourself in the rich culture of Japan, from the traditional tea ceremony to the latest anime and
+          manga. Explore the
+          beautiful natural scenery, from the snow-capped Mount Fuji to the stunning Japanese Alps.
+        </p>
+      </div>
+    </div>
+
+    <div class="container"></div>
+
+    <h2> <br> Visit Italy!</h2>
+    <div class="col-sm-4">
+      <img class="img" src="Italy.jpg" width="150" height="180" />
+    </div>
+
+    <div class="col-sm-6">
+      <div class="textAgn">
+        <p>
+          <br> Italy is a country that has it all: stunning scenery, delicious food, rich history, and vibrant culture.
+          <br>
+        </p>
+        <p>
+          Whether you're interested in ancient history, Renaissance art, or simply exploring charming villages and
+          towns,
+          Italy has something to offer everyone.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <!--Bootstrap JS Link-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+
+    function GotoLogout() {
+      location.href = "Login.html"
+    }
+
+    var Logoutbutton = document.querySelector('.Logout');
+    Logoutbutton.addEventListener('click', GotoLogout);
+  </script>
+</body>
+
+</html>

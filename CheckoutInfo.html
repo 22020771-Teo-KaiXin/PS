@@ -1,0 +1,279 @@
+second commit
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LightSpeedRail</title>
+</head>
+
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+    border-right: 1px solid #bbb;
+  }
+
+  li:last-child {
+    border-right: none;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #111;
+  }
+
+  ul {
+    position: left;
+    top: 0;
+    width: 100%;
+  }
+
+  .active {
+    background-color: #04AA6D;
+  }
+
+  body {
+    background-image: url('Train_Background.jpg');
+    background-size: cover;
+  }
+
+  .white-box1 {
+    position: absolute;
+    background-color: #FFFFFF;
+    color: rgb(114, 3, 114);
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .white-box1 p {
+    font-size: 25px;
+    text-align: bottom;
+    line-height: 1.5;
+  }
+
+  .white-box2 {
+    position: relative;
+    background-color: #FFFFFF;
+    color: rgb(114, 3, 114);
+    width: 400px;
+    height: 400px;
+    float: right;
+    margin-right: 50px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .white-box2 p {
+    font-size: 22px;
+    text-align: left;
+    line-height: 2.5;
+  }
+
+  .white-box3 {
+    position: absolute;
+    background-color: #FFFFFF;
+    color: rgb(114, 3, 114);
+    width: 222px;
+    height: 90px;
+    bottom: 37.5px;
+    right: 257px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .white-box3 p {
+    text-align: left;
+  }
+
+  .next {
+    background-color: rgb(19, 216, 79);
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 20px;
+  }
+
+  button {
+    position: fixed;
+    bottom: 10px;
+    right: 50px;
+  }
+
+  div {
+    text-align: center;
+  }
+</style>
+</head>
+
+<body>
+
+  <ul>
+    <li><a href=Login.html>Logout</a></li>
+    <li><a href=Recommendation.html>Recommendation</a></li>
+    <li><a href=index.html>Home</a></li>
+    <li><a class="active" href=Train_Booking_PS.html>Book With Us</a></li>
+    <!-- <li><a href=hihi>Checkout</a></li> -->
+  </ul>
+
+  <div class="white-box1">
+    <u><b>Ticket Collector Info</b></u>
+
+    <p><label for="Title">Title:</label>
+      <select name="Title" id="Title" style="height:25px;font-size:15pt;">
+        <option value="Mr">Mr</option>
+        <option value="Mrs">Mrs</option>
+        <option value="Miss">Miss</option>
+        <option value="Sir">Sir</option>
+        <option value="Mdm">Mdm</option>
+      </select>
+    </p>
+
+    <p><label for="fname">First Name:</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name.." style="height:25px;font-size:15pt;">
+    </p>
+
+    <p><label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.." style="height:25px;font-size:15pt;">
+    </p>
+
+    <p><label for="email">Email:</label>
+      <input type="text" id="email" name="Email" style="height:25px;font-size:15pt;">
+    </p>
+
+    <p><label for="contact">Contact:</label>
+
+      <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css" />
+     
+
+      <input name="phone" type="text" id="phone" style="height:35px;font-size:12pt;">
+
+      <script>
+      var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+          separateDialCode: true,
+          preferredCountries: ["sg", "my", "kr", "cn"]
+        });
+        </script>
+</body>
+
+<p>
+  <u>Pax:</u><br>
+  <label for="pax">Adult:</label>
+  <select name="adult" id="adult" style="height:25px;font-size:15pt;">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+  </select>
+
+  <br><label for="pax">Child:</label>
+  <select name="Pax" id="Pax" style="height:25px;font-size:15pt;">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+  </select>
+</p>
+
+</div>
+
+<div class="white-box2">
+  <u><b>Ticket Collector Info</u></b>
+
+  <p>
+    <label for="date">Deperature Date: </label>
+    <br><label for="deperature">Deperature Station: </label>
+    <br><label for="arrive">Arrive Station: </label>
+    <br><label for="train">Train: </label>
+    <br><label for="seats">Number of Seats: </label>
+    <br><label for="unit_price">Ticket Unit Price: </label>
+  </p>
+</div>
+
+<div class="white-box3">
+  <u><b>Payment Info</b></u>
+
+  <p>
+    <b><label for="total">Total: </label></b>
+    <label for="total">SGD </label>
+  </p>
+</div>
+
+<div id="button">
+
+    <button class="next" type="Next" formaction="CheckoutPayment.html">Next</button>
+
+</div>
+
+<!--
+<div class="form-row input-layout">
+  <input tabindex="1" type="text" name="UID" id="UID" maxlength="20" placeholder="" class="left" autocomplete="off" fdprocessedid="4hhnf">
+              <span class="highlight"></span>
+              <span id="uidBar" class="bar"></span>
+              <label>Email</label>
+</div>
+
+<div id="errormsg" style="display:none" class="error-msg">
+  <h4 id="InvalidUserId">Sorry, you have entered an invalid User ID.</h4>
+</div>
+-->
+<script>
+  
+
+  function validateEmail(Email) {
+    // Regular expression pattern for email validation
+    var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return pattern.test(Email);
+  }
+
+  function handleLogin() {
+    var email = document.getElementsByName('Email')[0].value;
+    var Fname = document.getElementsByName('firstname')[0].value;
+    var Lname = document.getElementsByName('lastname')[0].value;
+    var Phone = document.getElementsByName('phone')[0].value;
+
+
+    // Check if email and password are not empty
+    if (email.trim() === '' || Fname.trim() === '' || Lname.trim() === '' || Phone.trim() === '') {
+      alert('Please enter all the field');
+      return;
+    }
+
+    // Check if email is valid
+    if (!validateEmail(email)) {
+      alert('Invalid email format.');
+      return;
+    }
+
+    // If all validations pass, perform login logic
+    location.href = "CheckoutPayment.html"
+  }
+
+  var NextButton = document.querySelector('.next');
+  NextButton.addEventListener('click', handleLogin);
+</script>
+</body>
+</style>
+
+</html>
